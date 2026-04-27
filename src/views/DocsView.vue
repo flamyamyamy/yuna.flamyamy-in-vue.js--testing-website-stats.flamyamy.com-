@@ -27,5 +27,5 @@
 </template>
 
 <script setup>
-import commands from '../data/commands.js'
+import { commandData } from '@/data/commands.js'
 </script>
