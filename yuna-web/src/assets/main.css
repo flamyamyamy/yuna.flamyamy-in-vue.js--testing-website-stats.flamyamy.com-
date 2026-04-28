@@ -1,4 +1,3 @@
-/* --- RESET & BASICS --- */
 *,
 *::before,
 *::after {
@@ -105,7 +104,6 @@ body {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* --- HERO SECTION --- */
 .hero {
     min-height: 80vh;
     display: flex;
@@ -126,7 +124,8 @@ body {
     font-size: clamp(3rem, 8vw, 4.5rem);
     color: var(--text-main);
     font-family: 'JetBrains Mono', monospace;
-    line-height: 1.1;
+    line-height: 1.15;
+    padding-bottom: 0.1em;
     margin-bottom: 1rem;
     text-shadow: 0 0 20px rgba(255, 158, 205, 0.3);
 }
