@@ -11,7 +11,8 @@
           </div>
           <p class="hero-description">
             Yuna brings moderation, utility tools, leveling, and automations
-            together for communities that want to feel safer, more fun, and more connected.
+            together for communities that want to feel safer, more fun, and more
+            connected.
           </p>
           <div class="hero-actions">
             <a
@@ -47,7 +48,8 @@
         <div class="card">
           <h3>Moderation</h3>
           <p>
-            Scalable moderation systems with advanced staff tooling and automation.
+            Scalable moderation systems with advanced staff tooling and
+            automation.
           </p>
         </div>
         <div class="card">
@@ -67,60 +69,60 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from "vue";
 
 const phrases = [
-  'Moderation. Tickets. And much more.',
-  'Moderation. Tickets. Built for you.',
-  'Multilingual. Modular. Always evolving.',
-  'Moderation. Games. And much more.'
-]
+  "Moderation. Tickets. And much more.",
+  "Moderation. Tickets. Built for you.",
+  "Multilingual. Modular. Always evolving.",
+  "Moderation. Games. And much more.",
+];
 
-const displayText = ref('')
-const currentPhraseIndex = ref(0)
-const typing = ref(true)
-let intervalId = null
-let pauseTimeoutId = null
+const displayText = ref("");
+const currentPhraseIndex = ref(0);
+const typing = ref(true);
+let intervalId = null;
+let pauseTimeoutId = null;
 
 const getNextPhraseIndex = () => {
-  let next = Math.floor(Math.random() * phrases.length)
+  let next = Math.floor(Math.random() * phrases.length);
   while (next === currentPhraseIndex.value && phrases.length > 1) {
-    next = Math.floor(Math.random() * phrases.length)
+    next = Math.floor(Math.random() * phrases.length);
   }
-  return next
-}
+  return next;
+};
 
 const startTyping = () => {
-  const phrase = phrases[currentPhraseIndex.value]
+  const phrase = phrases[currentPhraseIndex.value];
 
   if (typing.value) {
     if (displayText.value.length < phrase.length) {
-      displayText.value += phrase[displayText.value.length]
+      displayText.value += phrase[displayText.value.length];
     } else {
-      typing.value = false
-      clearInterval(intervalId)
+      typing.value = false;
+      clearInterval(intervalId);
       pauseTimeoutId = setTimeout(() => {
-        intervalId = setInterval(startTyping, 40)
-      }, 1200)
+        intervalId = setInterval(startTyping, 40);
+      }, 1200);
     }
   } else {
     if (displayText.value.length > 0) {
-      displayText.value = displayText.value.slice(0, -1)
+      displayText.value = displayText.value.slice(0, -1);
     } else {
-      currentPhraseIndex.value = getNextPhraseIndex()
-      typing.value = true
-      clearInterval(intervalId)
-      intervalId = setInterval(startTyping, 70)
+      currentPhraseIndex.value = getNextPhraseIndex();
+      typing.value = true;
+      clearInterval(intervalId);
+      intervalId = setInterval(startTyping, 70);
     }
   }
-}
+};
 
 onMounted(() => {
-  intervalId = setInterval(startTyping, 70)
-})
+  intervalId = setInterval(startTyping, 70);
+});
 
 onUnmounted(() => {
-  clearInterval(intervalId)
-  clearTimeout(pauseTimeoutId)
-})
+  clearInterval(intervalId);
+  clearTimeout(pauseTimeoutId);
+});
 </script>
