@@ -28,7 +28,7 @@ export const commandData = [
     description: 'Boost server engagement with a variety of interactive social commands. From relationship simulators to automated media fetching, these tools are designed to keep the chat active and entertaining for everyone.',
     commands: [
       { 
-        name: '/ship', 
+        name: '/ship <user1> <user2>', 
         text: 'Calculate the compatibility between two users using our unique algorithm. Generates a visual percentage and a custom relationship status message for the pair.' 
       },
       { 
@@ -40,7 +40,7 @@ export const commandData = [
         text: 'A powerful internal search engine that allows users to find specific funny content, memes, or previous interactions within the bot\'s library.' 
       },
       { 
-        name: '/react', 
+        name: '/react <action> <user>', 
         text: 'Forces the bot to add specific emotional reactions to a message, helping to highlight important community moments or inside jokes.' 
       }
     ]
@@ -51,19 +51,19 @@ export const commandData = [
     description: 'Access deep insights from external databases and internal server metrics. This module integrates with major APIs to provide real-time data about users, media, and server health.',
     commands: [
       { 
-        name: '/anime', 
+        name: '/anime <title>', 
         text: 'Query the global database for exhaustive details including studio history, airing dates, sequels, and community ratings. Includes spoiler-free synopses.' 
       },
       { 
-        name: '/userinfo', 
+        name: '/userinfo <user>', 
         text: 'Displays a comprehensive technical profile of a member, including account age, server join dates, permission flags, and unique Discord identifiers.' 
       },
       { 
-        name: '/serverinfo', 
+        name: '/serverinfo <invite>', 
         text: 'Generates a snapshot of the current server status, showing member counts, boost levels, security settings, and owner information in a clean embed.' 
       },
       { 
-        name: '/manga', 
+        name: '/manga <title>', 
         text: 'Search for manga titles to retrieve publication status, chapter counts, and author bibliographies. Perfect for tracking your reading progress.' 
       }
     ]
@@ -82,7 +82,7 @@ export const commandData = [
         text: 'Showcases the most active members of the community. Compete for the top spot and see how you stack up against the server\'s veterans.' 
       },
       { 
-        name: '/set-level-role', 
+        name: '/set-level-role <level> <role>', 
         text: 'Configure automatic role rewards. When a user reaches a specific level, the bot will automatically assign them a new role to show their status.' 
       }
     ]
@@ -92,10 +92,6 @@ export const commandData = [
     emoji: '🛡️',
     description: 'Provide your staff team with the power to maintain order. These commands are built for speed and reliability, ensuring that rule-breakers are handled efficiently.',
     commands: [
-      { 
-        name: '/ban', 
-        text: 'Permanently removes a user from the server and wipes their recent message history. This action is logged for administrative transparency.' 
-      },
       { 
         name: '/premium', 
         text: 'Access the subscription management panel to unlock advanced features like custom branding and priority support for your server.' 
