@@ -57,7 +57,7 @@ html, body {
 
 .app-wrapper {
     min-height: 100vh;
-    /* subtle ambient — no ugly blobs */
+
     background:
         radial-gradient(ellipse 60% 30% at 20% 0%, rgba(249, 200, 216, 0.06) 0%, transparent 100%),
         radial-gradient(ellipse 40% 20% at 80% 0%, rgba(245, 200, 66, 0.04) 0%, transparent 100%),
