@@ -26,7 +26,7 @@
         </div>
         <div class="hero-image-wrapper">
           <img
-            src="https://i.imgur.com/UyLDdGg.png"
+            src="https://i.imgur.com/etR7f4F.png"
             alt="Yuna Bot Character"
             class="hero-image"
           />

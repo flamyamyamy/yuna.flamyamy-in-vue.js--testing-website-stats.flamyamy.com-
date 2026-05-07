@@ -4,102 +4,148 @@
 
     <div class="grid-1">
       <div class="card">
-        <h2>Yuna Bot – Terms of Service & Privacy Policy</h2>
+        <pre>
+PolyForm Noncommercial License 1.0.0
 
-        <p class="doc-desc">
-          By accessing or using Yuna, you acknowledge and agree to the following legal terms,
-          privacy policy, and service conditions.
-        </p>
+Copyright (c) 2026 Giulia Amy Lyra Yuna Thiex
 
-        <div class="command-item">
-          <h3>§1 Operator Information</h3>
-          <p>
-            The operator of Yuna is:<br />
-            Giulia Amy Lyra Yuna Thiex<br />
-            Villach, Austria
-          </p>
-        </div>
+Licensed under the PolyForm Noncommercial License 1.0.0.
+You may obtain a copy of the license at:
 
-        <div class="command-item">
-          <h3>§2 Scope of Service</h3>
-          <p>
-            Yuna is an automated digital bot platform intended for entertainment, moderation,
-            utility, and automation purposes. Features may be changed, expanded, limited,
-            or removed at any time without prior notice.
-          </p>
-        </div>
+https://polyformproject.org/licenses/noncommercial/1.0.0
 
-        <div class="command-item">
-          <h3>§3 Acceptable Use</h3>
-          <p>
-            Users may not abuse, exploit, reverse engineer, overload, spam, attack,
-            manipulate, or otherwise misuse Yuna or its infrastructure. Violation may
-            result in suspension or permanent denial of service.
-          </p>
-        </div>
+## Acceptance
 
-        <div class="command-item">
-          <h3>§4 Data Processing</h3>
-          <p>
-            Yuna may process technical and usage-related data necessary for operation,
-            including but not limited to command usage, configuration settings,
-            temporary logs, server metadata, and diagnostics.
-          </p>
-        </div>
+In order to get any license under these terms, you must agree
+to them as both strict obligations and conditions to all
+your licenses.
 
-        <div class="command-item">
-          <h3>§5 Data Retention & Deletion</h3>
-          <p>
-            Data shall only be stored as long as reasonably necessary for technical,
-            analytical, operational, security, or legal purposes. Deletion requests may
-            be honored where technically and legally applicable.
-          </p>
-        </div>
+## Copyright License
 
-        <div class="command-item">
-          <h3>§6 Warranty Disclaimer</h3>
-          <p>
-            Yuna is provided "as is" and "as available" without warranties of any kind.
-            The operator makes no guarantees regarding uptime, availability, reliability,
-            accuracy, or uninterrupted service.
-          </p>
-        </div>
+The licensor grants you a copyright license for the
+software to do everything you might do with the software
+that would otherwise infringe the licensor's copyright
+in it for any permitted purpose. However, you may
+only distribute the software according to Distribution
+License and make changes or new works based on the
+software according to Changes and New Works License.
 
-        <div class="command-item">
-          <h3>§7 Limitation of Liability</h3>
-          <p>
-            To the maximum extent permitted by law, the operator shall not be liable for
-            any damages, losses, data corruption, service interruptions, or indirect or
-            consequential damages resulting from the use of Yuna.
-          </p>
-        </div>
+## Distribution License
 
-        <div class="command-item">
-          <h3>§8 Third-Party Services</h3>
-          <p>
-            Yuna may integrate with or link to third-party services. The operator assumes
-            no responsibility for third-party content, availability, privacy practices,
-            or damages arising from their use.
-          </p>
-        </div>
+The licensor grants you an additional copyright license
+to distribute copies of the software. Your license
+to distribute covers distributing the software with
+changes and new works permitted by Changes and New Works
+License.
 
-        <div class="command-item">
-          <h3>§9 Modifications</h3>
-          <p>
-            These terms may be updated, modified, or replaced at any time. Continued use
-            of Yuna after modifications constitutes acceptance of the updated terms.
-          </p>
-        </div>
+## Notices
 
-        <div class="command-item">
-          <h3>§10 Contact</h3>
-          <p>
-            Legal, privacy, or support inquiries must be submitted through official
-            Yuna support channels.
-          </p>
-        </div>
+You must ensure that anyone who gets a copy of any part of
+the software from you also gets a copy of these terms or
+the URL for them above, as well as copies of any plain-text
+lines beginning with:
 
-        <p class="doc-desc">Last Updated: April 2026</p>
+Required Notice:
+
+that the licensor provided with the software.
+
+Required Notice:
+Copyright (c) 2026 Giulia Amy Lyra Yuna Thiex
+
+## Changes and New Works License
+
+The licensor grants you an additional copyright license
+to make changes and new works based on the software for
+any permitted purpose.
+
+## Patent License
+
+The licensor grants you a patent license for the software
+that covers patent claims the licensor can license, or
+becomes able to license, that you would infringe by using
+the software.
+
+## Noncommercial Purposes
+
+Any noncommercial purpose is a permitted purpose.
+
+## Personal Uses
+
+Personal use for research, experiment, and testing for
+the benefit of public knowledge, personal study, private
+entertainment, hobby projects, amateur pursuits, or
+religious observance, without any anticipated commercial
+application, is use for a permitted purpose.
+
+## Noncommercial Organizations
+
+Use by any charitable organization, educational institution,
+public research organization, public safety or health
+organization, environmental protection organization,
+or government institution is use for a permitted purpose
+regardless of the source of funding or obligations resulting
+from the funding.
+
+## Fair Use
+
+You may have "fair use" rights for the software under the
+law. These terms do not limit them.
+
+## No Other Rights
+
+These terms do not allow you to sublicense or transfer any of
+your licenses to anyone else, or prevent the licensor from
+granting licenses to anyone else. These terms do not imply
+any other licenses.
+
+## Patent Defense
+
+If you make any written claim that the software infringes or
+contributes to infringement of any patent, your patent license
+for the software granted under these terms ends immediately. If
+your company makes such a claim, your patent license ends
+immediately for work on behalf of your company.
+
+## Violations
+
+The first time you are notified in writing that you have
+violated any of these terms, or done anything with the software
+not covered by your licenses, your licenses can nonetheless
+continue if you come into full compliance with these terms,
+and take practical steps to correct past violations, within
+32 days of receiving notice. Otherwise, all your licenses
+end immediately.
+
+## No Liability
+
+As far as the law allows, the software comes as is, without
+any warranty or condition, and the licensor will not be liable
+to you for any damages arising out of these terms or the use
+or nature of the software, under any kind of legal claim.
+
+## Definitions
+
+The licensor is the individual or entity offering these terms,
+and the software is the software the licensor makes available
+under these terms.
+
+You refers to the individual or entity agreeing to these terms.
+
+Your company is any legal entity, sole proprietorship, or
+other kind of organization that you work for, plus all
+organizations that have control over, are under the control of,
+or are under common control with that organization.
+
+Control means ownership of substantially all the assets of an
+entity, or the power to direct its management and policies by
+vote, contract, or otherwise. Control can be direct or indirect.
+
+Your licenses are all the licenses granted to you for the
+software under these terms.
+
+Use means anything you do with the software requiring one of
+your licenses.
+        </pre>
       </div>
     </div>
   </section>
