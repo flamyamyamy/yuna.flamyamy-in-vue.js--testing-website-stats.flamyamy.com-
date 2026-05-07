@@ -2,56 +2,50 @@ export const commandData = [
   {
     title: 'Anime & Manga Database',
     emoji: '⛩️',
-    description: 'Access detailed info from the world of Japanese media.',
+    icon: 'anime',
+    description:
+      'A powerful gateway into the world of Japanese animation and manga. Retrieve structured information, detailed summaries, and character insights instantly.',
     commands: [
-      { name: '/anime <title>', text: 'Shows a complete overview of an anime, including status, episodes, and a synopsis.' },
-      { name: '/character <name>', text: 'Find information and high-quality images of your favorite anime characters.' },
-      { name: '/manga <title>', text: 'Displays details about manga volumes, chapters, and the publishing story.' }
+      {
+        name: '/anime <title>',
+        text:
+          'Retrieves a comprehensive overview of any anime title, including release status, episode count, studio information, genres, ratings, and a spoiler-free synopsis designed for quick understanding.'
+      },
+      {
+        name: '/character <name>',
+        text:
+          'Displays in-depth character profiles from anime and manga, including background lore, affiliations, personality traits, and high-resolution images sourced from verified databases.'
+      },
+      {
+        name: '/manga <title>',
+        text:
+          'Provides detailed information about manga series including publication status, chapter progression, author details, volume breakdowns, and narrative summaries.'
+      }
     ]
   },
+
   {
     title: 'User Utilities',
     emoji: '👤',
-    description: 'Get insights into server members.',
+    icon: 'user',
+    description:
+      'Advanced user inspection tools designed to give clear insights into Discord profiles, activity, and identity data across the server.',
     commands: [
-      { name: '/userinfo [user]', text: 'View join dates, roles, permissions, and unique Discord IDs.' },
-      { name: '/avatar [user]', text: 'Fetch the full resolution profile picture of a specific user.' },
-      { name: '/banner [user]', text: "Extract and display a user's profile banner in its original size." }
-    ]
-  },
-  {
-    title: 'Leveling & Experience',
-    emoji: '📊',
-    description: 'Track your activity and compete with friends.',
-    commands: [
-      { name: '/rank', text: 'Displays your personal rank card with current level and XP progress.' },
-      { name: '/leaderboard', text: 'View the top 10 most active members on the current server.' },
-      { name: '/level-setup', text: '<strong>(Admin Only)</strong> Set up XP multipliers and level-up announcement channels.' }
-    ]
-  },
-  {
-    title: 'Inspiration & Quotes',
-    emoji: '📜',
-    description: 'Get inspired by random quotes.',
-    commands: [
-      { name: '/quote', text: 'Brings you a random quote from famous authors or historical figures.' }
-    ]
-  },
-  {
-    title: 'Social Fun',
-    emoji: '🎮',
-    description: 'Interactive features to engage with the community.',
-    commands: [
-      { name: '/ship <user1> <user2>', text: 'Calculates the love compatibility percentage between two users.' },
-      { name: '/react <user>', text: 'Sends a stylish ping with a specific anime reaction image to a friend.' }
-    ]
-  },
-  {
-    title: 'Social Reactions',
-    emoji: '💖',
-    description: 'Express yourself using animated GIF commands.',
-    commands: [
-      { name: '/react <action> @user', text: 'Choose from a wide variety of actions (e.g., hug, pat, slap, kiss) to interact with other users. Just type the command followed by the action and tag a user.' }
+      {
+        name: '/userinfo [user]',
+        text:
+          'Displays a complete profile overview including account creation date, server join history, roles, permissions, and unique Discord identifiers.'
+      },
+      {
+        name: '/avatar [user]',
+        text:
+          'Fetches the highest-resolution version of a user avatar, optimized for preview or download.'
+      },
+      {
+        name: '/banner [user]',
+        text:
+          'Extracts the user profile banner in full resolution, including animated banners where available.'
+      }
     ]
   }
 ]

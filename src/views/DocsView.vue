@@ -1,31 +1,30 @@
 <template>
-  <section class="section">
-    <h1 class="section-title">// Command Directory</h1>
+  <div class="wiki-layout">
+    <DocsSidebar
+      :commandData="commandData"
+      :active="activeCategory"
+    />
 
-    <div class="grid-1">
-      <div
-        v-for="category in commandData"
-        :key="category.title"
-        class="card doc-card"
-      >
-        <h3>{{ category.emoji }} {{ category.title }}</h3>
-        <p class="doc-desc">{{ category.description }}</p>
-
-        <div class="command-list">
-          <div
-            v-for="cmd in category.commands"
-            :key="cmd.name"
-            class="command-item"
-          >
-            <span class="prompt">{{ cmd.name }}</span>
-            <p v-html="cmd.text"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <DocsContent :category="activeCategory" />
+  </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
 import { commandData } from '@/data/commands.js'
+
+import DocsSidebar from '@/components/docs/DocsSidebar.vue'
+import DocsContent from '@/components/docs/DocsContent.vue'
+
+const route = useRoute()
+
+const activeCategory = computed(() => {
+  return (
+    commandData.find(
+      (c) => c.title.toLowerCase().includes(route.params.category)
+    ) || commandData[0]
+  )
+})
 </script>
